@@ -22,7 +22,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton('Support', url=f'https://t.me/technomindzchat')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -37,8 +37,8 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('ℍ𝔼𝕃ℙ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('📢𝓤𝓟𝓓𝓐𝓣𝓔𝓢', url='https://t.me/TechnoMindzchat')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -53,7 +53,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
+                temp.MELCOW['welcome'] = await message.reply(f"<b>Hello 👋, {u.mention}, Welcome to {message.chat.title} \nHow Are you ?\nJoin Your Freiends Here 😉\nAlso Join Our Chatting Group @TechnoMindzChat</b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -67,7 +67,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('𝓢𝓤𝓟𝓟𝓞𝓡𝓣', url=f'https://t.me/technomindzchat')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -221,7 +221,7 @@ async def unban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("This is an invalid user, make sure ia have met him before.")
+        return await message.reply("This is an invalid user, make sure i have met him before.")
     except IndexError:
         return await message.reply("Thismight be a channel, make sure its a user.")
     except Exception as e:
