@@ -16,8 +16,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/TechnoMindz/CommonBot_For_All",
-    "repository": "https://github.com/TechnoMindz/CommonBot_For_All",
+    "website": "https://github.com/TechnoMindz/AutoDelete_RoBot_V2",
+    "repository": "https://github.com/TechnoMindz/AutoDelete_RoBot_V2",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
